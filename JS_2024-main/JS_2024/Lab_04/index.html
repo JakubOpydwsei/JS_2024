@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add new note</title>
+    <title>Notes</title>
 </head>
 <body>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            height: auto;
+            width: 30em;
+            padding: 20px;
+            margin: 10px auto 10px auto;
+            text-align: center;
+
+        }
+    </style>
+
+
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+
+        <label for="content">Content of note</label>
+        <input type="text" name="content" id="content">
+        <!-- <textarea name="content" id="content" cols="30" rows="1"> -->  
+        <!-- </textarea> -->
+            <br>
+        <label for="colour">Choose colour</label>
+        <select name="colour" id="colour">
+            <option value='red'>Red</option>
+            <option value='green'>Green</option>
+            <option value='blue'>Blue</option>
+            <option value='yellow'>Yellow</option>
+        </select>
+
+        <label for="pin">Pin note?</label>
+        <input type="checkbox" name="pin" id="pin">
+
+     <!-- data ukryta -->
+        <br>
+     <button type="submit" id="buttonAdd">Add note</button>
+
+     <hr>
 
     <div id="container"></div>
 
