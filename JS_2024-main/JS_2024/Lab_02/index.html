@@ -6,22 +6,32 @@
     <title>Document</title>
 </head>
 <style>
-    .slider{
-        /* width: 38%; */
-        width: 240px;
-        height: 200px;
-        border: 1px black solid;
-        margin: auto;
-        /* overflow: hidden; */
-        display: flex;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
 
-    img{
-        margin: 0 20px 0 20px;
-    }
-    .box{
-        display: flex;
-    }
+.slider {
+    width: 240px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    transition: transform 0.8s;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+}
 
 </style>
 <body>
@@ -31,7 +41,6 @@
     </section>
     <br>
     <button id="back">wstecz</button><button id="next">dalej</button>
-    <br>
     <button id="zdj0">zdj1</button>
     <button id="zdj1">zdj2</button>
     <button id="zdj2">zdj3</button>
